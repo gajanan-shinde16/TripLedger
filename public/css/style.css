@@ -1,0 +1,254 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    flex: 1;
+}
+
+.navbar{
+    height: 5rem;
+    background-color: #fff;
+}
+
+.navbar-collapse{
+    background-color: #fff;
+    z-index: 1050;           /* ensures it appears above page content */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.fa-compass{
+    color:#fa424d;
+    font-size: 2rem;
+}
+
+.nav-link{
+    color: #222222 !important; /*to override bootstrap styles*/
+    padding: 8px 12px;
+}
+
+.footer-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.footer-info-links a:hover{
+    text-decoration: underline;
+}
+
+
+.footer-info{
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-info-socials i {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+/* CARDS */
+
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    /* object-fit: cover !important; */
+}
+
+.card-body{
+    padding: 0 !important;
+}
+
+.card-text p{
+    font-weight: 400 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+.card-img-overlay{
+    opacity: 0;
+}
+
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: #fff;
+}
+
+
+/* New Page mostly */
+.add-btn{
+    background-color:#fa424d !important;
+    border: none !important;
+}
+
+
+/* Show Page */
+
+.show-image{
+    height: 30vh;
+}
+
+.btns{
+    display: flex;
+}
+
+.shpw-card{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Edit page */
+
+.edit-btn{
+    background-color:#fa424d !important;
+    border: none !important;
+    width: 5rem;
+}
+
+#map{
+    height: 400px;
+    width: 85vh;
+    border-radius: 2%;
+}
+.filter-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.filters-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.filters-btn {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.filters-btn:hover {
+  background-color: #f5f5f5;
+}
+
+#filters {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 0;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+  flex: 1;
+}
+
+#filters::-webkit-scrollbar {
+  height: 6px;
+}
+#filters::-webkit-scrollbar-thumb {
+  background: #de0808;
+  border-radius: 4px;
+}
+
+.filter {
+  flex: 0 0 auto;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-icon {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.filter:hover .filter-icon,
+.filter:hover p {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.tax-toggle {
+  border: 2px solid black;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-left: 1rem;
+  height: 3.25rem;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .filter-panel {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .filters-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 13px;
+  }
+
+  #filters {
+    gap: 1rem;
+  }
+
+  .tax-toggle {
+    font-size: 12px;
+    padding: 0.6rem;
+    height: auto;
+  }
+}
+
+.search-btn{
+    background-color: #fa424d !important; 
+    color: #fff !important;
+    border-radius: 25px !important;
+    padding: 0 1rem 0 1rem !important;
+}
+
+.search-btn i{
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.search-inp{
+    border-radius: 25px !important;
+    padding: 0.5rem 3rem 0.5rem 3rem !important;
+}
+
+
+
+
+
+
