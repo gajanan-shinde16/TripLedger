@@ -108,5 +108,5 @@ app.use((err,req,res,next)=>{
 }) 
 
 app.listen(8080,()=>{
-    console.log(`listening from port {port}`); 
+    console.log(`listening from port ${port}`); 
 }); 
