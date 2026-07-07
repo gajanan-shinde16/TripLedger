@@ -15,6 +15,7 @@ const User = require("./models/user.js");
 if(process.env.NODE_ENV != "production"){
     require('dotenv').config();
 }
+const port = process.env.PORT || 8080;
 
 
 
@@ -107,5 +108,5 @@ app.use((err,req,res,next)=>{
 }) 
 
 app.listen(8080,()=>{
-    console.log("listening from port 8080"); 
+    console.log(`listening from port {port}`); 
 }); 
